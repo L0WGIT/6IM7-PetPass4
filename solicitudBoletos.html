@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra de Boletos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="solicitudBoletos.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar reutilizada -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="Resources/icon_ticket.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex ms-auto me-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Buscar"
+            style="width: 700px;">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <img src="Resources/icon_ayuda.png" alt="Logo" width="25" height="25">
+              Ayuda
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido del evento -->
+  <div class="event-header d-flex align-items-center">
+    <img src="Resources/event_image.png" alt="Evento">
+    <div>
+      <h5>Nombre del evento</h5>
+      <p>Fecha y hora del evento | Lugar del evento</p>
+      <a href="#" class="btn btn-outline-light btn-sm">Información</a>
+      <a href="#" class="btn btn-outline-light btn-sm">Boletos para personas con discapacidad</a>
+    </div>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Mapa de asientos -->
+      <div class="col-md-8">
+        <h2>Mapa de Asientos - Selecciona tu Lugar</h2>
+        <div class="custom-map-container">
+          <svg viewBox="0 0 800 400">
+            <image
+              href="https://mapsapi.tmol.io/maps/geometry/image/21/59/215955?removeFilters=ISM_Shadow&amp;tmSansFonts=true&amp;app=PRD1741_ICCP-FE&quot"
+              width="800" height="400" />
+            <!-- Define las zonas clicables con círculos -->
+            <circle class="zone" data-zone="PERF D1" cx="306" cy="130" r="15" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D2" cx="356" cy="115" r="15" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D3" cx="400" cy="110" r="15" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D4" cx="443" cy="115" r="15" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D5" cx="495" cy="130" r="15" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D6" cx="350" cy="250" r="20" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D7" cx="400" cy="250" r="20" stroke="black" stroke-width="2" />
+            <circle class="zone" data-zone="PERF D8" cx="450" cy="250" r="20" stroke="black" stroke-width="2" />
+            <!-- Añadir más zonas aquí -->
+          </svg>
+        </div>
+
+        <div class="mt-4">
+          <h4>Zona Seleccionada:</h4>
+          <p id="zoneInfo">Ninguna</p>
+        </div>
+      </div>
+
+      <!-- Lista de boletos -->
+      <div class="col-md-4">
+        <h4>Opciones de Boletos:</h4>
+        <div id="ticketOptions">
+          <!-- Las opciones de boletos se cargarán aquí dinámicamente -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white mt-5">
+    <div class="container p-4">
+      <div class="row">
+        <!-- Sección 1: Enlaces -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="text-uppercase">Estamos para ayudarte</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#" class="text-white">Inicio</a></li>
+            <li><a href="#" class="text-white">Contacto</a></li>
+            <li><a href="#" class="text-white">Preguntas Frecuentes</a></li>
+            <li><a href="#" class="text-white">Ayuda</a></li>
+          </ul>
+        </div>
+
+        <!-- Sección 2: Contacto -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="text-uppercase">Nosotros</h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <p class="text-white">Email: info@TicketPlus.com</p>
+            </li>
+            <li>
+              <p class="text-white">Teléfono: +52 55 4560 0389</p>
+            </li>
+            <li>
+              <p class="text-white">Dirección: CECyT 9-IPN, Mar Mediterráneo #227, CDMX</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sección 3: Redes Sociales -->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h5 class="text-uppercase">Síguenos</h5>
+          <ul class="list-unstyled mb-0 d-flex">
+            <li><a href="#" class="text-white me-4"><img src="Resources/icon_fb.png" alt="Facebook"
+                  width="24">Facebook</a></li>
+            <li><a href="#" class="text-white me-4"><img src="Resources/icon_twitter.png" alt="Twitter"
+                  width="24">Twitter</a></li>
+            <li><a href="#" class="text-white me-4"><img src="Resources/icon_ig.png" alt="Instagram"
+                  width="24">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-secondary">
+      <p class="mb-0">© 2024 TicketPlus. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="solicitudBoletos.js"></script>
+  <!-- Modal -->
+  <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ticketModalLabel">Tu selección</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="ticketDetails">
+            <!-- Los detalles del boleto se cargarán aquí dinámicamente -->
+          </div>
+          <div class="d-flex justify-content-between mt-4">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" id="buyTicketsButton">Comprar boletos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

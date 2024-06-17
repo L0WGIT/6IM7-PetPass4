@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Evento</title>
+    <link
+rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="seleccionarEventos.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img src="Resources/eventus_Logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex ms-auto me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Buscar" style="width: 700px;" />
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+  
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <img src="Resources/icon_ayuda.png" alt="Logo" width="25" height="25" />
+                  Ayuda
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seleccionarEventos.html">Selecionar Eventos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div class="gallery">
+            <div class="event">
+                <a href="evento1.html">
+                    <img src="evento1.jpg" alt="Evento 1">
+                    <div class="description">
+                        <h2>Evento 1</h2>
+                        <p>Descripción breve del Evento 1.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="event">
+                <a href="evento2.html">
+                    <img src="evento2.jpg" alt="Evento 2">
+                    <div class="description">
+                        <h2>Evento 2</h2>
+                        <p>Descripción breve del Evento 2.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="event">
+                <a href="evento3.html">
+                    <img src="evento3.jpg" alt="Evento 3">
+                    <div class="description">
+                        <h2>Evento 3</h2>
+                        <p>Descripción breve del Evento 3.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Puedes agregar más eventos aquí siguiendo el mismo formato -->
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container p-4">
+          <div class="row">
+            <!-- Sección 1: Enlaces -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="text-uppercase">Estamos para ayudarte</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#" class="text-white">Inicio</a></li>
+                <li><a href="#" class="text-white">Contacto</a></li>
+                <li><a href="#" class="text-white">Preguntas Frecuentes</a></li>
+                <li><a href="#" class="text-white">Ayuda</a></li>
+              </ul>
+            </div>
+  
+            <!-- Sección 2: Contacto -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <h5 class="text-uppercase">Nosotros</h5>
+              <ul class="list-unstyled mb-0">
+                <li><p class="text-white">Email: info@TicketPlus.com</p></li>
+                <li><p class="text-white">Teléfono: +52 55 4560 0389</p></li>
+                <li><p class="text-white">Dirección: CECyT 9-IPN, Mar Mediterráneo #227, CDMX</p></li>
+              </ul>
+            </div>
+  
+            <!-- Sección 3: Redes Sociales -->
+            <div class="col-lg-4 col-md-12 mb-4">
+              <h5 class="text-uppercase">Síguenos</h5>
+              <ul class="list-unstyled mb-0 d-flex">
+                <li>
+                  <a href="#" class="text-white me-4">
+                    <img src="Resources/icon_fb.png" alt="Facebook" width="24" />Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white me-4">
+                    <img src="Resources/icon_twitter.png" alt="Twitter" width="24" />Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-white me-4">
+                    <img src="Resources/icon_ig.png" alt="Instagram" width="24" />Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 bg-secondary">
+          <p class="mb-0">© 2024 TicketPlus. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+</body>
+</html>

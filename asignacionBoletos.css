@@ -1,0 +1,26 @@
+.navbar-custom {
+    background-color: #E39B14;
+  }
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+        color: #ffffff !important;
+    }
+.container-all {
+    height: 51vh;
+}	
+/* asignacionBoletos.css */
+.container-all {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .progress-bar {
+    transition: width 0.5s ease;
+  }
+  
+  .alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+  }
+  

@@ -1,0 +1,66 @@
+.navbar-custom {
+    background-color: #E39B14; /* Color azul */
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+      color: #ffffff !important;
+  }
+.seat {
+    cursor: pointer;
+    fill: green;
+    stroke: black;
+    stroke-width: 2;
+}
+.seat:hover {
+    fill: lightgreen;
+}
+.seat-booked {
+    fill: red;
+    cursor: not-allowed;
+}
+.stage {
+    fill: grey;
+    stroke: black;
+    stroke-width: 2;
+}
+/* Texto del escenario */
+text {
+    fill: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.navbar-custom .navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-outline-light:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+.container-payment {
+    max-width: 1200px;
+    margin: auto;
+}
+.payment-details, .order-summary {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.order-summary img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.order-summary .details {
+    margin-bottom: 15px;
+}
+.order-summary .details p {
+    margin: 0;
+}

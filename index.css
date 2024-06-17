@@ -1,0 +1,42 @@
+.custom-height {
+    height: 570px;
+  }
+  .custom-height .carousel-item img {
+    height: 570px;
+  }
+  .custom-height2 {
+    height: 300px;
+  }
+  .custom-height2 .carousel-item img {
+    height: 300px;
+    
+  }
+  .navbar-custom {
+    background-color: #E39B14; /* Color azul */
+}
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+        color: #ffffff !important;
+    }
+
+    /* index.css */
+
+.navbar-custom .navbar-brand img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-light:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.event-img {
+    cursor: pointer;
+}

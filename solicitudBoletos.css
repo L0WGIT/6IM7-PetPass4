@@ -1,0 +1,69 @@
+.navbar-custom {
+  background-color: #E39B14; /* Color azul */
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #ffffff !important;
+}
+
+.stage {
+  fill: #6c757d;
+}
+
+.zone {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.zone:hover {
+  fill: rgba(0, 123, 255, 0.5);
+}
+
+.custom-map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.custom-map-container img {
+  width: 100%;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.ticket-info img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.ticket-info .details {
+  flex-grow: 1;
+}
+
+.ticket-info .details p {
+  margin: 0;
+}
+
+.ticket-info .price {
+  font-weight: bold;
+}
+
+.event-header {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+}
+
+.event-header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
